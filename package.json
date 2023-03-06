@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+	"build": "tsc -p tsconfig.json && cp -a ./src/public/. ./dist/public/",
     "dev": "ts-node-dev src/index",
     "start": "node dist/index",
 	"tailwind": "tailwindcss -i ./src/public/css/input.css -o ./src/public/css/index.css --watch"
